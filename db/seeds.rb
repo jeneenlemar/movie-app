@@ -9,11 +9,32 @@
 
 # actor.save
 # RECORD DONE
-require 'ffaker'
+# require 'ffaker'
 
-actor = (FFaker::Name.first_name_male, FFaker::Name.last_name)
-
-actor.save
+# 3.times do
+#   actor = Actor.new(
+#   first_name: FFaker::Name.first_name_male,
+#   last_name: FFaker::Name.last_name, 
+#   known_for: FFaker::Name.title 
+#   )
+#   actor.save
+# end
 
       #=> "Christophe Bartell"
 # FFaker::Internet.email  #=> "kirsten.greenholt@corkeryfisher.info"
+
+# my_movie = Movie.new(
+#   title: "A Few Good Men",
+#   year: 1992,
+#   plot: "Military lawyer Lieutenant Daniel Kaffee defends Marines accused of murder. They contend they were acting under orders.. (credit:source-IMDB)"
+#   )
+
+# my_movie.save
+
+# my_movie = Movie.new(
+#   title: "Rudy",
+#   year: 1993,
+#   plot: "Rudy has always been told that he was too small to play college football. But he is determined to overcome the odds and fulfill his dream of playing for Notre Dame. (credit:source-IMDB)"
+#   )
+
+# my_movie.save
