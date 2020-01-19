@@ -5,10 +5,12 @@ class Api::MoviesController < ApplicationController
     render "all_movies.json.jb"
   end
 
+
   def first_movie_method
     @movie = Movie.first
-    render "first_movie.json.rb"
+    render "first_movie.json.jb"
     
   end
+
 
 end

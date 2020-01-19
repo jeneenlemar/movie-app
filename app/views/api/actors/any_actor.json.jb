@@ -1,0 +1,9 @@
+#test connection plain
+# {
+#   msg: "hi"
+# }
+
+# add static data to instance variable and test with static data
+
+# @any_actor
+@selected_actor
