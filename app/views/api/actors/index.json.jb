@@ -1,0 +1,17 @@
+# {
+#   msg: "index items"
+# }
+
+#test all first
+# @actors 
+
+#Make loop to go through each item and map it to a new array of hashes - WATCH YOUR COMMAS!
+
+@actors.map do |actor|
+  {
+    id: actor.id,
+    first_name: actor.first_name,
+    last_name: actor.last_name,
+    known_for: actor.known_for
+  }
+end

@@ -1,0 +1,12 @@
+# {
+#   msg: "show info"
+# }
+
+#next - @actor is ONE record already, so you now use that hash and just call out specific bits below!}
+
+{
+  id: @actor.id,
+  first_name: @actor.first_name,
+  last_name: @actor.last_name,
+  known_for: @actor.known_for
+}

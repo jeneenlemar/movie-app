@@ -9,13 +9,16 @@
 
 # actor.save
 # RECORD DONE
+
+
+
 # require 'ffaker'
 
 # 3.times do
 #   actor = Actor.new(
-#   first_name: FFaker::Name.first_name_male,
+#   first_name: FFaker::Name.first_name,
 #   last_name: FFaker::Name.last_name, 
-#   known_for: FFaker::Name.title 
+#   known_for: FFaker::Job.title 
 #   )
 #   actor.save
 # end
