@@ -3,6 +3,25 @@ class Api::ActorsController < ApplicationController
 
   def index
     @actors = Actor.all
+
+    # asked to add for sorting actors oldest to youngest.  This does either depending on params passed.
+
+    if params[:sort] == "age" && params[:sort_order] == "asc"  
+      @actors = @actors.order(:age)
+    else params[:sort] == "age" && params[:sort_order] == "desc"
+      @actors = @actors.order(age: :desc)
+    end
+
+
+
+
+
+
+
+
+
+
+
     render "index.json.jb"
   end
 
