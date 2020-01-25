@@ -4,6 +4,20 @@ class Api::MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+
+    #searches for movies that are not english
+
+    if params[:lang] == "foreign"   
+      @movies = @movies.where("english = ?", "false")
+    end
+
+
+
+
+
+
+
+
     render "index.json.jb"
   end
 
