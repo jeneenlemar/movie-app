@@ -41,3 +41,17 @@
 #   )
 
 # my_movie.save
+
+my_movie = Movie.new(
+  title: "Herbie",
+  year: 1972,
+  plot: "car movie",
+  director: "somedude",
+  english: true
+  )
+
+my_movie.save
+
+
+
+
