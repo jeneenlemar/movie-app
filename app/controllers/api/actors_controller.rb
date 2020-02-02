@@ -1,5 +1,6 @@
 class Api::ActorsController < ApplicationController
 
+  before_action :authenticate_admin, except: [:index, :show]  
 
   def index
     @actors = Actor.all
@@ -36,7 +37,8 @@ class Api::ActorsController < ApplicationController
       last_name: params[:last_name],
       known_for: params[:known_for],
       gender: params[:gender],
-      age: params[:age]
+      age: params[:age],
+      movie_id: params[:movie_id]
       )
     
     if @actor.save
@@ -71,10 +73,6 @@ class Api::ActorsController < ApplicationController
     @actor.destroy
     render json: {message: "Record has been successfully deleted"}
   end
-
-    
-  
-
 
   
 end

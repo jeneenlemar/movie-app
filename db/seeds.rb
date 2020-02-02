@@ -42,15 +42,37 @@
 
 # my_movie.save
 
-my_movie = Movie.new(
-  title: "Herbie",
-  year: 1972,
-  plot: "car movie",
-  director: "somedude",
-  english: true
-  )
+# my_movie = Movie.new(
+#   title: "Herbie",
+#   year: 1972,
+#   plot: "car movie",
+#   director: "somedude",
+#   english: true
+#   )
 
-my_movie.save
+# my_movie.save
+
+# Genre.create(name: "action")
+# Genre.create(name: "comedy")
+# Genre.create(name: "drama")
+
+# MovieGenre.create(genre_id: 1, movie_id: 8)
+# MovieGenre.create(genre_id: 1, movie_id: 10)
+# MovieGenre.create(genre_id: 1, movie_id: 12)
+# MovieGenre.create(genre_id: 1, movie_id: 16)
+# MovieGenre.create(genre_id: 2, movie_id: 2)
+# MovieGenre.create(genre_id: 2, movie_id: 11)
+# MovieGenre.create(genre_id: 2, movie_id: 13)
+# MovieGenre.create(genre_id: 3, movie_id: 1)
+# MovieGenre.create(genre_id: 3, movie_id: 3)
+# MovieGenre.create(genre_id: 3, movie_id: 4)
+# MovieGenre.create(genre_id: 3, movie_id: 5)
+# MovieGenre.create(genre_id: 2, movie_id: 1)
+# MovieGenre.create(genre_id: 1, movie_id: 2)
+# MovieGenre.create(genre_id: 1, movie_id: 3)
+
+
+
 
 
 
