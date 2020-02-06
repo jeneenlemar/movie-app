@@ -1,0 +1,37 @@
+
+<div class="heading-main">
+  
+
+  <h1>
+    <%= @movie.title %>
+  </h1>
+</div>
+
+
+<p>Year: <%= @movie.year %></p>
+<p>Director: <%= @movie.director %></p>
+<p>Plot: <%= @movie.plot %></p>
+
+<form action="/action_page.php">
+  First name: <input type="text" name="FirstName"><br>
+  Last name: <input type="text" name="LastName"><br>
+
+  Gender: <br>
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female <br>
+  <input type="radio" name="gender" value="other"> Other<br>
+
+
+  Email: <input type="email" name="email" multiple><br>
+
+  Favorite Fruit:
+  <select name="fruit_id">
+        <option value="1">Banana</option>
+        <option value="2">Cherry</option>
+        <option value="3">Lemon</option>
+    </select>
+
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the server called "/action_page.php".</p>
